@@ -1,0 +1,481 @@
+/* Import fonts from google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap');
+
+/* create varaibles */
+
+:root {
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --text-color: #ff696b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+
+
+/* global classes */
+
+.primary-color {
+    color: var(--primary-color)
+}
+
+.bg-primary-color {
+    color: var(--light-gray)
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+.font-gugi {
+    font-family: var(--gugi);
+}
+
+.font-sofia {
+    font-family: var(--sofia);
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+
+/* header */
+
+header {
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header .site-title {
+    font-family: var(--gugi);
+}
+
+.header-links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff
+}
+
+
+/* navigation-menu */
+
+.navbar-nav {
+    padding: 0.8em 0em;
+}
+
+.nav-nav .nav-link {
+    font-size: 0.9em;
+    color: var(--light-gray)!important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon {
+    margin-right: 6.5rem !important;
+}
+
+
+/* second slider */
+
+.site-slider-two {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-two .product {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-two .product img {
+    width: 80%;
+    margin: auto;
+}
+
+.site-btn .btn-span {
+    padding: 0.3rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid var(--border);
+    background-color: #fff;
+    color: var(--light-gray);
+}
+
+.site-slider-two .slider-two .product:hover span {
+    background-color: var(--primary-color);
+}
+
+
+/* Featured products */
+
+.heading {
+    background-color: var(--primary-color);
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.font-gugi {
+    font-family: var(--gugi);
+}
+
+.product img {
+    height: 80%;
+}
+
+
+/* discount section */
+
+
+/* what our clients are saying */
+
+#testimonials {
+    margin: 8rem 0;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+#testimonials-slider .slick-slide {
+    text-align: center;
+}
+
+#testimonials-slider blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1rem auto 3rem;
+    max-width: 740px;
+}
+
+#testimonials-slider .testimonials-caption {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#testimonials-slider .testimonials-caption img {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.testimonials-caption {
+    position: relative;
+    top: 13px;
+}
+
+.testimonials-caption .name {
+    font-size: 1.4rem;
+}
+
+
+/* small banner */
+
+.small-banner h4,
+.small-banner p {
+    margin: 8% 0% 2% 20%
+}
+
+.small-banner .fa-shipping-fast,
+.fa-hand-holding-usd,
+.fa-shopping-cart {
+    margin-left: 30%;
+    font-size: 3rem;
+}
+
+
+/* contact us */
+
+#contact {
+    background: #f8f9fa;
+    padding: 4rem 0 8rem;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: var(--sofia);
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+#form-container {
+    width: 58%;
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    height: 0%;
+    font-family: var(--gugi);
+}
+
+#form-container h3 {
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+#form-container label {
+    display: block;
+    color: #000;
+    margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    color: #495057;
+}
+
+#form-container textarea {
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+#address-container {
+    width: 38%;
+    background: #fff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#address-container label {
+    font-weight: 700;
+    display: block;
+    margin-top: 2rem;
+}
+
+#address-container label:first-child {
+    margin-top: 0;
+}
+
+#address-container address {
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+
+#address-container a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#address-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+
+/* start: footer styles */
+
+footer {
+    background: var(--light-gray);
+    padding: 8rem 0;
+}
+
+footer .flex {
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #666;
+}
+
+footer h5 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+footer h5.follow-us {
+    margin-top: 1rem;
+}
+
+footer .footer-about {
+    width: 47%;
+}
+
+footer .footer-about p {
+    width: 65%;
+}
+
+footer .footer-quick-links {
+    width: 16%;
+}
+
+footer .footer-quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-quick-links ul li {
+    margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+    color: #666;
+}
+
+footer .footer-subscribe {
+    width: 35%;
+}
+
+#subscribe-container {
+    position: relative;
+}
+
+footer .footer-subscribe input {
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    border: 1px solid #444;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #333;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+footer button.right-rounded {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--primary-color);
+    font-size: 16px;
+    color: #333;
+    padding: 10px 30px 9px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+footer button.right-rounded:hover {
+    background: #333;
+}
+
+footer .footer-subscribe ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-subscribe ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+    margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+    color: #333;
+}
+
+footer small {
+    margin-top: 3rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+footer small a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer small a:hover {
+    color: #fff;
+}
+
+
+/* media */
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .large-paragraph {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .container {
+        max-width: 540px;
+    }
+    #testimonials-slider p {
+        font-size: 1.2rem;
+    }
+    #contact .flex {
+        flex-wrap: wrap;
+    }
+    #form-container {
+        width: 100%;
+        padding: 2rem;
+    }
+    #address-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    footer {
+        padding: 6rem 0;
+    }
+    footer .flex {
+        flex-wrap: wrap;
+    }
+    footer .flex>div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    footer .flex>div:first-child {
+        margin-top: 0;
+    }
+    footer .footer-about p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    footer .footer-subscribe input {
+        width: 90%;
+    }
+    footer h5.follow-us {
+        margin-top: 2rem;
+    }
+}
